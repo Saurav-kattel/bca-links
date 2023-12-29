@@ -1,0 +1,60 @@
+#currentTime{
+    float: right;
+}
+#currentDate{
+    float: right;
+}
+body{
+    background-color: black;
+}
+h1{
+    color: blanchedalmond;
+}
+button{
+    color: red;
+    background-color: blue;
+    font-weight: bold;
+    cursor: grab;
+}
+
+.red{
+background-color: red;
+float: left;
+height: 200px;;
+}
+li{
+    align-items:start;
+    width: 90%;
+}
+.dark{
+    background-color:darkred;
+    color: aliceblue;
+    height: 60px;
+    overflow: hidden;
+    font-weight: bolder;
+}
+table{
+    text-align: left;
+}aside{
+    background-color: aliceblue;
+}
+#imgzone{
+    border-style:double;
+    border-color:crimson;
+}
+* {
+    box-sizing: border-box;
+  }
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+    transition: 2s;
+  }
+  .note{
+    background-color:gray;
+    color: gold;
+    height: 60px;
+    width: 60%;
+    padding-left: 40px;
+  }
