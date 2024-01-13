@@ -1,0 +1,253 @@
+/* #currentTime {
+  float: right;
+}
+#currentDate {
+  float: right;
+}
+body {
+  background-color: black;
+}
+h1 {
+  color: blanchedalmond;
+}
+button {
+  color: red;
+  background-color: blue;
+  font-weight: bold;
+  cursor: grab;
+}
+
+.red {
+  background-color: red;
+  float: left;
+  height: 200px;
+}
+li {
+  align-items: start;
+  width: 90%;
+}
+.dark {
+  background-color: darkred;
+  color: aliceblue;
+  height: 60px;
+  overflow: hidden;
+  font-weight: bolder;
+}
+table {
+  text-align: left;
+}
+aside {
+  background-color: aliceblue;
+}
+#imgzone {
+  border-style: double;
+  border-color: crimson;
+}
+* {
+  box-sizing: border-box;
+}
+.zoom:hover {
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5);
+  transition: 2s;
+}
+.note {
+  background-color: gray;
+  color: gold;
+  height: 60px;
+  width: 60%;
+  padding-left: 40px;
+} */
+:root {
+  --primary-color: #020b2a;
+}
+
+* {
+  font-family: sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: radial-gradient(teal, var(--primary-color));
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  overflow-x: hidden;
+}
+
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(60deg, teal, gray);
+  padding: 0.6rem 0rem;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.links-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-container {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(teal, black);
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  color: black;
+}
+
+.link-button-container {
+  text-decoration: none;
+  padding: 0.7rem;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #000;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+  cursor: pointer;
+}
+.link-button-container > a {
+  text-decoration: none;
+}
+
+.link-name {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.link-button-container:hover {
+  transition: all ease-in-out 300ms;
+  animation-name: animate-hover;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animate-hover {
+  0% {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: radial-gradient(teal, var(--primary-color));
+  }
+  20% {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  40% {
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  60% {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  100% {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-image: radial-gradient(teal, var(--primary-color));
+  }
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 100px;
+  background-image: url("../assets/star.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.animate-scroll {
+  animation: animate-scroll 300ms ease-in-out forwards;
+  transition: all 500ms;
+}
+
+@keyframes animate-scroll {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.frame-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 110vh;
+  align-items: center;
+}
+.frame-screen {
+  width: 80vw;
+  height: 100vh;
+  padding: 0.5rem;
+}
+
+.footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  color: cadetblue;
+  align-items: center;
+}
+.footer > address > a {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bolder;
+  color: cornflowerblue;
+}
+
+.footer > address > a:hover {
+  color: darkcyan;
+  transition: all;
+  transform: scale(110, 110);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.go-home > a {
+  position: absolute;
+  top: 30px;
+  text-decoration: none;
+  left: 10px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: white;
+}
