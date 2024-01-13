@@ -193,7 +193,7 @@ body {
 
 .animate-scroll {
   animation: animate-scroll 300ms ease-in-out forwards;
-  transition: all 500ms;
+  transition: all 1000ms;
 }
 
 @keyframes animate-scroll {
